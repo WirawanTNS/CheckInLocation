@@ -7,5 +7,18 @@
   <body>
     <h1>ยินดีต้อนรับ!</h1>
     <p>ระบบบันทึกตำแหน่งพนักงาน</p>
+    <button onclick="checkIn()">เช็กอิน</button>
+    <script>
+    function checkIn() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(position => {
+          alert("ละติจูด: " + position.coords.latitude + "\nลองจิจูด: " + position.coords.longitude);
+          // ต่อไป: ส่งไปเก็บใน Google Sheet หรือ Firebase
+        });
+      } else {
+        alert("เบราว์เซอร์ไม่รองรับการหาตำแหน่ง");
+      }
+    }
+    </script>
   </body>
 </html>
