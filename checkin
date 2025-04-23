@@ -1,1 +1,11 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Check-in Location</title>
+  </head>
+  <body>
+    <h1>ยินดีต้อนรับ!</h1>
+    <p>ระบบบันทึกตำแหน่งพนักงาน</p>
+  </body>
+</html>
